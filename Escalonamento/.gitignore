@@ -1,0 +1,6 @@
+bin/
+lib/
+.vscode/
+*.mp4
+*.avi
+*.mov
