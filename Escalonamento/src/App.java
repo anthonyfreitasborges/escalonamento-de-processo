@@ -5,7 +5,12 @@ public class App {
         String caminhoArquivo = "src/processo.txt";
         List<Processo> processos = LeitorArquivo.ler(caminhoArquivo);
 
-        EscalonadorFCFS escalonador = new EscalonadorFCFS();
-        escalonador.executar(processos);
+        EscalonadorFCFS escalonadorFCFS = new EscalonadorFCFS();
+     //   escalonadorFCFS.executar(processos);
+        EscalonadorSJF escalonadorSJF = new EscalonadorSJF();
+       // escalonadorSJF.executar(processos);
+        EscalonadorRoundRobin escalonadorRoundRobin = new EscalonadorRoundRobin();
+      //  escalonadorRoundRobin.executar(processos);
+        
     }
 }
